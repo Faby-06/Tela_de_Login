@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <a href="TelaLogin.html"></a>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registar</title>
+
+<style>
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: linear-gradient(50deg,black,green(85, 188, 85));
+}
+div{
+
+    background-color: none;
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    border-radius: 15px;
+    color:black;
+}
+input{
+    padding: 15px;
+    border: purple;
+    outline: pink;
+    font-size: 18px;
+}
+#submit{
+    background-color:purple;
+    border: none;
+    padding: 15px;
+    width: 100;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: deepskyblue;
+}
+
+</style>
+
+
+</head>
+<body>
+    <div>
+        <h1>Registar</h1>
+        <input type="text"placeholder="nome">
+        <br><br>
+        <input type="text"placeholder="E-mail">
+        <br><br>
+        <input type="password"placeholder="senha(min 8 caracteres)"><br>
+        <p> sexo: </p>
+        <input type="radio" id="masculino" name="sexo" value="masculino">
+        <label for="masculino">masculino</label><br>
+        <input type="radio" id="feminino" name="sexo" value="feminino">
+        <label for="feminino">feminino</label><br><br>
+        <input type="submit" name="registar" id="submit" onclick="abriralerta()">
+    </div>
+</body>
+<script>
+    function abriralerta() {
+        alerta("cadastrado com sucesso")
+    }
+</script>
+</html>
